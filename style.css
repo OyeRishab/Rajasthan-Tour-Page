@@ -1,0 +1,87 @@
+/* General Stlyes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #2f2f2f;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* -------------- */
+
+/* Header */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 15px gray;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.nav-link:hover {
+  padding-left: 2.5rem;
+  background-color: black;
+  color: #f2f2f2;
+}
+
+.show-links {
+  height: 202px;
+}
+
+@media screen and (min-width: 810px) {
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav-toggle {
+    display: none;
+  }
+  .nav-links {
+    padding-right: 2rem;
+    height: auto;
+    flex-direction: row;
+  }
+  .nav-link {
+    padding: 1rem;
+  }
+  .nav-link:hover {
+    padding: 1rem;
+  }
+}
+/* ------ */
